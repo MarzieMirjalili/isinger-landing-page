@@ -17,10 +17,6 @@ p {
   margin: 0;
 }
 
-.header-container {
-  background-color: cadetblue;
-}
-
 .nav-bar {
   display: flex;
   width: 100%;
@@ -250,4 +246,71 @@ p {
   line-height: 30px;
   text-align: right;
   color: #464646;
+}
+
+.about-me-container {
+  width: 100%;
+  max-width: 1179px;
+  margin: 0 auto;
+  display: flex;
+}
+.about-me-container .about-me-picture-container {
+  position: relative;
+}
+.about-me-container .about-me-picture-container .man-pic {
+  margin-left: 67px;
+}
+.about-me-container .about-me-picture-container .back-reg-pink {
+  position: absolute;
+  width: 264px;
+  height: 603px;
+  top: 98px;
+  z-index: -1;
+  background: #ffb3c9;
+  border-radius: 30px;
+}
+.about-me-container .about-me-picture-container .back-reg-purple {
+  position: absolute;
+  width: 264px;
+  height: 603px;
+  left: 41px;
+  top: 98px;
+  z-index: -1;
+  background: #b48fdb;
+  border-radius: 30px;
+}
+.about-me-container .about-me-text-container {
+  padding-top: 100px;
+}
+.about-me-container .about-me-text-container .title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  color: #362a43;
+}
+.about-me-container .about-me-text-container .text {
+  max-width: 540px;
+  margin-top: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #464646;
+}
+.about-me-container .about-me-text-container .more-button {
+  width: 140px;
+  height: 50px;
+  background: #b48fdb;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  align-items: center;
+  color: #ffffff;
 }/*# sourceMappingURL=styles.css.map */
