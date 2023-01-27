@@ -1,0 +1,188 @@
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.header-container {
+  background-color: cadetblue;
+}
+
+.nav-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+}
+.nav-bar .logo {
+  width: 20%;
+}
+.nav-bar .nav-items {
+  display: flex;
+  align-items: center;
+}
+.nav-bar .nav-items .nav-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #362a43;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.nav-bar .nav-items .nav-item:first-child {
+  margin-left: 0;
+}
+.nav-bar .nav-items .nav-item:last-child {
+  margin-right: 0;
+}
+.nav-bar .social-medias {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  width: 20%;
+}
+.nav-bar .social-medias a {
+  display: inherit;
+}
+
+.heaedr-content {
+  width: 100%;
+  max-width: 1179px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 82px auto 0 auto;
+}
+.heaedr-content .left-side {
+  max-width: 445px;
+}
+.heaedr-content .left-side .main-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #362a43;
+}
+.heaedr-content .left-side .description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #464646;
+  margin-top: 23px;
+}
+.heaedr-content .left-side .contact-button {
+  margin-top: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 229px;
+  height: 60px;
+  background: #b48fdb;
+  border-radius: 10px;
+}
+.heaedr-content .left-side .contact-button p {
+  flex: 1;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.heaedr-content .left-side .contact-button .arrow-icon {
+  border: none;
+  width: 60px;
+  height: 60px;
+  background: #ffb3c9;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.heaedr-content .right-side {
+  position: relative;
+  width: 675px;
+  height: 773px;
+}
+.heaedr-content .right-side .pink-circle {
+  width: 626px;
+  height: 626px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ffb3c9;
+  right: 0;
+}
+.heaedr-content .right-side .purple-circle {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #b48fdb;
+  top: 143px;
+}
+.heaedr-content .right-side img {
+  width: 472px;
+  height: 670px;
+  position: absolute;
+  top: 103px;
+  left: 125px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.lastest-release-block {
+  display: flex;
+  background-color: #362a43;
+  width: 100%;
+  max-width: 1179px;
+  margin: 0 auto;
+}
+.lastest-release-block .background-shadow {
+  background-color: #f8fdfd;
+  width: 55%;
+  height: 923px;
+  margin-left: auto;
+}
+.lastest-release-block .background-shadow .lastest-release-slider {
+  height: 530px;
+}
+.lastest-release-block .lastest-release {
+  padding-top: 110px;
+  background-color: red;
+}
+.lastest-release-block .lastest-release .lastest-release-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  color: #362a43;
+}
+.lastest-release-block .lastest-release .lastest-release-description {
+  width: 423px;
+  margin-top: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #464646;
+}/*# sourceMappingURL=styles.css.map */

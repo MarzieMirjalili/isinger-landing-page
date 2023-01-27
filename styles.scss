@@ -1,0 +1,214 @@
+$pink: #ffb3c9;
+$purple: #b48fdb;
+$container-width: 1179px;
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+
+  //   --pinki: #ffb3c9;
+  //   --purple: #b48fdb;
+}
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  margin-bottom: 0;
+}
+p {
+  margin: 0;
+}
+.header-container {
+  background-color: cadetblue;
+}
+.nav-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  //   background-color: aqua;
+  padding: 30px 80px;
+  .logo {
+    width: 20%;
+  }
+  .nav-items {
+    display: flex;
+    align-items: center;
+    .nav-item {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #362a43;
+      margin-left: 20px;
+      margin-right: 20px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .social-medias {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+    width: 20%;
+    a {
+      display: inherit;
+    }
+  }
+}
+.heaedr-content {
+  width: 100%;
+  max-width: $container-width;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 82px auto 0 auto;
+  //   background-color: aquamarine;
+  .left-side {
+    // margin-left: auto;
+    // background-color: bisque;
+    max-width: 445px;
+    .main-title {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 72px;
+      line-height: 72px;
+      color: #362a43;
+    }
+    .description {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #464646;
+      margin-top: 23px;
+    }
+    .contact-button {
+      margin-top: 33px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 229px;
+      height: 60px;
+      background: $purple;
+      border-radius: 10px;
+
+      p {
+        // background-color: red;
+        flex: 1;
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #ffffff;
+      }
+      .arrow-icon {
+        // display: flex;
+        border: none;
+        width: 60px;
+        height: 60px;
+        background: $pink;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+  .right-side {
+    position: relative;
+    width: 675px;
+    height: 773px;
+    .pink-circle {
+      width: 626px;
+      height: 626px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: $pink;
+      right: 0;
+    }
+    .purple-circle {
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: $purple;
+      top: 143px;
+    }
+    img {
+      width: 472px;
+      height: 670px;
+      position: absolute;
+      top: 103px;
+      left: 125px;
+      object-fit: contain;
+      object-position: bottom;
+    }
+  }
+}
+
+.lastest-release-block {
+  display: flex;
+  background-color: #362a43;
+  width: 100%;
+  max-width: $container-width;
+  margin: 0 auto;
+  .background-shadow {
+    background-color: #f8fdfd;
+    width: 55%;
+    height: 923px;
+    margin-left: auto;
+    .lastest-release-slider {
+      height: 530px;
+    }
+  }
+  .lastest-release {
+    // width: 45%;
+    // padding-left: 405px;
+    padding-top: 110px;
+    background-color: red;
+    .lastest-release-title {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 57px;
+      color: #362a43;
+    }
+    .lastest-release-description {
+      width: 423px;
+      margin-top: 11px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #464646;
+    }
+  }
+}
+
+// .title {
+//   background-color: var(--color-primary);
+//   padding: 10px;
+//   font-size: 30px;
+//   .title-in {
+//     background-color: blanchedalmond;
+//   }
+//   &__text {
+//     color: blue;
+//   }
+//   span {
+//     div {
+//       p {
+//       }
+//     }
+//   }
+// }
