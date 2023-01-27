@@ -149,27 +149,24 @@ p {
      object-position: bottom;
 }
 
-.lastest-release-block {
-  display: flex;
-  background-color: #362a43;
+.latest-release-block-container {
+  width: 100%;
+  position: relative;
+}
+.latest-release-block-container .latest-release-block {
   width: 100%;
   max-width: 1179px;
   margin: 0 auto;
 }
-.lastest-release-block .background-shadow {
-  background-color: #f8fdfd;
-  width: 55%;
-  height: 923px;
-  margin-left: auto;
+.latest-release-block-container .latest-release-block .arrows-and-title-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
-.lastest-release-block .background-shadow .lastest-release-slider {
-  height: 530px;
-}
-.lastest-release-block .lastest-release {
+.latest-release-block-container .latest-release-block .arrows-and-title-container .latest-release {
   padding-top: 110px;
-  background-color: red;
 }
-.lastest-release-block .lastest-release .lastest-release-title {
+.latest-release-block-container .latest-release-block .arrows-and-title-container .latest-release .latest-release-title {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
@@ -177,12 +174,80 @@ p {
   line-height: 57px;
   color: #362a43;
 }
-.lastest-release-block .lastest-release .lastest-release-description {
+.latest-release-block-container .latest-release-block .arrows-and-title-container .latest-release .latest-release-description {
   width: 423px;
   margin-top: 11px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+  color: #464646;
+}
+.latest-release-block-container .latest-release-block .arrows-and-title-container .slider-arrows {
+  display: flex;
+  padding: 189px 80px 0 0;
+  gap: 46px;
+}
+.latest-release-block-container .latest-release-block .background-shadow {
+  position: absolute;
+  background-color: #f8fdfd;
+  width: 55%;
+  height: 1123px;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.latest-release-block-container .latest-release-slider {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  overflow-x: scroll;
+  height: 730px;
+  width: 100%;
+  padding: 100px 0 100px calc((100% - 1179px) / 2);
+}
+.latest-release-block-container .latest-release-slider .release-item {
+  background: #ffffff;
+  box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+  border-radius: 30px;
+  width: 350px;
+  height: 100%;
+  padding: 20px;
+  flex-shrink: 0;
+}
+.latest-release-block-container .latest-release-slider .release-item .cover {
+  width: 100%;
+  border-radius: 30px;
+}
+.latest-release-block-container .latest-release-slider .release-item .detail {
+  padding: 10px;
+}
+.latest-release-block-container .latest-release-slider .release-item .detail .title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  color: #362a43;
+  padding-bottom: 13px;
+}
+.latest-release-block-container .latest-release-slider .release-item .detail .info {
+  display: flex;
+  justify-content: space-between;
+}
+.latest-release-block-container .latest-release-slider .release-item .detail .label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #464646;
+}
+.latest-release-block-container .latest-release-slider .release-item .detail .value {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: right;
   color: #464646;
 }/*# sourceMappingURL=styles.css.map */

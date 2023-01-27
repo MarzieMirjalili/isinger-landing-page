@@ -154,43 +154,108 @@ p {
     }
   }
 }
-
-.lastest-release-block {
-  display: flex;
-  background-color: #362a43;
+.latest-release-block-container {
   width: 100%;
-  max-width: $container-width;
-  margin: 0 auto;
-  .background-shadow {
-    background-color: #f8fdfd;
-    width: 55%;
-    height: 923px;
-    margin-left: auto;
-    .lastest-release-slider {
-      height: 530px;
+  position: relative;
+  .latest-release-block {
+    // background-color: aqua;
+    width: 100%;
+    max-width: $container-width;
+    margin: 0 auto;
+
+    .arrows-and-title-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .latest-release {
+        padding-top: 110px;
+        .latest-release-title {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 57px;
+          color: #362a43;
+        }
+        .latest-release-description {
+          width: 423px;
+          margin-top: 11px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          color: #464646;
+        }
+      }
+      .slider-arrows {
+        display: flex;
+        padding: 189px 80px 0 0;
+        gap: 46px;
+      }
+    }
+
+    .background-shadow {
+      position: absolute;
+      background-color: #f8fdfd;
+      width: 55%;
+      height: 1123px;
+      right: 0;
+      top: 0;
+      z-index: -1;
     }
   }
-  .lastest-release {
-    // width: 45%;
-    // padding-left: 405px;
-    padding-top: 110px;
-    background-color: red;
-    .lastest-release-title {
-      font-family: "Rubik";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 57px;
-      color: #362a43;
-    }
-    .lastest-release-description {
-      width: 423px;
-      margin-top: 11px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      color: #464646;
+  .latest-release-slider {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    overflow-x: scroll;
+    height: 730px;
+    width: 100%;
+    padding: 100px 0 100px calc((100% - $container-width) / 2);
+    .release-item {
+      background: #ffffff;
+      box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+      border-radius: 30px;
+      width: 350px;
+      height: 100%;
+      padding: 20px;
+      flex-shrink: 0;
+      .cover {
+        width: 100%;
+        border-radius: 30px;
+      }
+      .detail {
+        padding: 10px;
+        .title {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          align-items: center;
+          color: #362a43;
+          padding-bottom: 13px;
+        }
+        .info {
+          display: flex;
+          justify-content: space-between;
+        }
+        .label {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 30px;
+          color: #464646;
+        }
+        .value {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          text-align: right;
+          color: #464646;
+        }
+      }
     }
   }
 }
