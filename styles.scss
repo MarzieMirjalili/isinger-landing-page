@@ -198,7 +198,7 @@ p {
       position: absolute;
       background-color: #f8fdfd;
       width: 55%;
-      height: 1123px;
+      height: 1000px;
       right: 0;
       top: 0;
       z-index: -1;
@@ -232,7 +232,6 @@ p {
           font-weight: 700;
           font-size: 20px;
           line-height: 24px;
-          align-items: center;
           color: #362a43;
           padding-bottom: 13px;
         }
@@ -261,9 +260,9 @@ p {
 }
 .about-me-container {
   width: 100%;
-  //   background-color: red;
+  //   background-color: green;
   max-width: $container-width;
-  margin: 0 auto;
+  margin: 47px auto 0;
   display: flex;
 
   .about-me-picture-container {
@@ -323,8 +322,165 @@ p {
       font-weight: 500;
       font-size: 15px;
       line-height: 22px;
-      align-items: center;
       color: #ffffff;
+    }
+  }
+}
+.upcoming-shows-container {
+  width: 100%;
+  position: relative;
+  .upcoming-shows {
+    width: 100%;
+    max-width: $container-width;
+    margin: 120px auto;
+    padding-top: 110px;
+    .title-and-description-container {
+      //   background-color: red;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 57px;
+        color: #362a43;
+      }
+      .description {
+        width: 423px;
+        margin-top: 11px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #464646;
+      }
+    }
+    .background-shadow {
+      position: absolute;
+      background-color: #f8fdfd;
+      width: 55%;
+      height: 1000px;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+    .show-items-list {
+      margin-top: 13px;
+      .show-item {
+        width: 100%;
+        height: 176px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+        margin-top: 30px;
+        padding: 20px;
+        display: flex;
+        gap: 43px;
+        img {
+          border-radius: 12px;
+        }
+        .show-details {
+          padding: 18px 0;
+          flex: 1;
+          .title-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 35px;
+            .remaining-tickets-title {
+              display: flex;
+              img {
+                margin-right: 4px;
+              }
+              .label {
+                font-family: "Rubik";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                color: #362a43;
+              }
+              .value {
+                font-family: "Rubik";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 20px;
+                color: #362a43;
+                margin-left: 11px;
+              }
+            }
+            .show-title {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 28px;
+              line-height: 33px;
+              color: #362a43;
+            }
+          }
+          .infos-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 13px 35px 13px 0;
+            .show-infos {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr 6px 2fr);
+              column-gap: 53px;
+              row-gap: 10px;
+              font-style: normal;
+              font-size: 15px;
+              color: #464646;
+              .label {
+                font-weight: 500;
+              }
+              .value {
+                font-weight: 400;
+              }
+            }
+
+            .group-button {
+              display: flex;
+              align-items: center;
+              .tickets-button {
+                text-align: center;
+                width: 125px;
+                height: 50px;
+                background: $purple;
+                border-radius: 6px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                color: #ffffff;
+                border: none;
+                cursor: pointer;
+                margin-right: 8px;
+              }
+              .rsvp-button {
+                text-align: center;
+                width: 125px;
+                height: 50px;
+                background: #84dce3;
+                border-radius: 6px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                color: #ffffff;
+                border: none;
+                cursor: pointer;
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
