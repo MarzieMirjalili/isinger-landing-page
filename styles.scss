@@ -651,6 +651,185 @@ p {
   }
 }
 
+.about-workplace-container {
+  width: 100%;
+  position: relative;
+  .about-workplace {
+    width: 100%;
+    max-width: $container-width;
+    margin: 120px auto;
+    padding-top: 110px;
+    .title-and-description-container {
+      //   background-color: red;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 57px;
+        color: #362a43;
+      }
+      .description {
+        width: 423px;
+        margin-top: 11px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #464646;
+      }
+    }
+    .background-shadow {
+      position: absolute;
+      background-color: #f8fdfd;
+      width: 55%;
+      height: 794px;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+    .workplaces-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 43px;
+      padding-bottom: 50px;
+      gap: 30px;
+      .workplace-item {
+        width: 255px;
+        height: 302px;
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+        padding: 20px;
+        .img-container {
+          width: 80px;
+          height: 80px;
+          margin-top: 10px;
+          margin-bottom: 29px;
+        }
+        .title {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          color: #362a43;
+          margin-bottom: 20px;
+        }
+        .description {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          color: #464646;
+        }
+      }
+    }
+    .slider-arrows {
+      //   background-color: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 46px;
+    }
+  }
+}
+.team-members-container {
+  width: 100%;
+  //   background-color: green;
+  max-width: $container-width;
+  margin: 230px auto 0;
+  .title-and-description-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 57px;
+      color: #362a43;
+    }
+    .description {
+      width: 423px;
+      margin-top: 11px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #464646;
+    }
+  }
+  .team-members-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 43px;
+    padding-bottom: 50px;
+    gap: 30px;
+    // background-color: red;
+    .member-item {
+      width: 255px;
+      //   height: 378px;
+      background: #ffffff;
+      box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.15);
+      border-radius: 30px;
+      .member-pic {
+        width: 255px;
+        height: 255px;
+        border-radius: 30px;
+        object-fit: contain;
+        object-position: top;
+      }
+      .member-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        // background-color: green;
+        padding: 20px;
+        .name {
+          font-family: "Frank Ruhl Libre";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 26px;
+          line-height: 34px;
+          text-align: center;
+          color: #362a43;
+        }
+        .role {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          text-align: center;
+          color: rgba(54, 42, 67, 0.6);
+        }
+        .social-medias {
+          margin-top: 9px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 24px;
+          a {
+            display: inherit;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
 // .title {
 //   background-color: var(--color-primary);
 //   padding: 10px;

@@ -636,4 +636,181 @@ p {
   width: 2px;
   height: 14px;
   background: rgba(54, 42, 67, 0.2);
+}
+
+.about-workplace-container {
+  width: 100%;
+  position: relative;
+}
+.about-workplace-container .about-workplace {
+  width: 100%;
+  max-width: 1179px;
+  margin: 120px auto;
+  padding-top: 110px;
+}
+.about-workplace-container .about-workplace .title-and-description-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-workplace-container .about-workplace .title-and-description-container .title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  color: #362a43;
+}
+.about-workplace-container .about-workplace .title-and-description-container .description {
+  width: 423px;
+  margin-top: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #464646;
+}
+.about-workplace-container .about-workplace .background-shadow {
+  position: absolute;
+  background-color: #f8fdfd;
+  width: 55%;
+  height: 794px;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.about-workplace-container .about-workplace .workplaces-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 43px;
+  padding-bottom: 50px;
+  gap: 30px;
+}
+.about-workplace-container .about-workplace .workplaces-list .workplace-item {
+  width: 255px;
+  height: 302px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+  padding: 20px;
+}
+.about-workplace-container .about-workplace .workplaces-list .workplace-item .img-container {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  margin-bottom: 29px;
+}
+.about-workplace-container .about-workplace .workplaces-list .workplace-item .title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #362a43;
+  margin-bottom: 20px;
+}
+.about-workplace-container .about-workplace .workplaces-list .workplace-item .description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #464646;
+}
+.about-workplace-container .about-workplace .slider-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 46px;
+}
+
+.team-members-container {
+  width: 100%;
+  max-width: 1179px;
+  margin: 230px auto 0;
+}
+.team-members-container .title-and-description-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-members-container .title-and-description-container .title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  color: #362a43;
+}
+.team-members-container .title-and-description-container .description {
+  width: 423px;
+  margin-top: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #464646;
+}
+.team-members-container .team-members-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 43px;
+  padding-bottom: 50px;
+  gap: 30px;
+}
+.team-members-container .team-members-list .member-item {
+  width: 255px;
+  background: #ffffff;
+  box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.15);
+  border-radius: 30px;
+}
+.team-members-container .team-members-list .member-item .member-pic {
+  width: 255px;
+  height: 255px;
+  border-radius: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+}
+.team-members-container .team-members-list .member-item .member-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.team-members-container .team-members-list .member-item .member-info .name {
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 34px;
+  text-align: center;
+  color: #362a43;
+}
+.team-members-container .team-members-list .member-item .member-info .role {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: rgba(54, 42, 67, 0.6);
+}
+.team-members-container .team-members-list .member-item .member-info .social-medias {
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.team-members-container .team-members-list .member-item .member-info .social-medias a {
+  display: inherit;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
