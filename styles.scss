@@ -16,6 +16,7 @@ body {
 a {
   text-decoration: none;
   margin-bottom: 0;
+  color: inherit;
 }
 p {
   margin: 0;
@@ -212,6 +213,7 @@ p {
     height: 730px;
     width: 100%;
     padding: 100px 0 100px calc((100% - $container-width) / 2);
+    // background-color: red;
     .release-item {
       background: #ffffff;
       box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
@@ -744,7 +746,7 @@ p {
   width: 100%;
   //   background-color: green;
   max-width: $container-width;
-  margin: 230px auto 0;
+  margin: 230px auto 80px;
   .title-and-description-container {
     text-align: center;
     display: flex;
@@ -829,6 +831,153 @@ p {
     }
   }
 }
+.latest-blog-block-container {
+  width: 100%;
+  position: relative;
+  .latest-blog-block {
+    width: 100%;
+    max-width: $container-width;
+    margin: 0 auto;
+
+    .arrows-and-title-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .title-and-description-container {
+        padding-top: 110px;
+        .title {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 57px;
+          color: #362a43;
+        }
+        .description {
+          width: 423px;
+          margin-top: 11px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          color: #464646;
+        }
+      }
+      .slider-arrows {
+        display: flex;
+        padding: 189px 80px 0 0;
+        gap: 46px;
+      }
+    }
+
+    .background-shadow {
+      position: absolute;
+      background-color: #f8fdfd;
+      width: 55%;
+      height: 1000px;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+  }
+  .latest-blog-slider {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    overflow-x: scroll;
+    // height: 730px;
+    width: 100%;
+    padding: 43px 0 43px calc((100% - $container-width) / 2);
+    .blog-item {
+      background: #ffffff;
+      box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+      border-radius: 30px;
+      width: 540px;
+      height: 100%;
+      padding: 20px;
+      flex-shrink: 0;
+      .cover {
+        border-radius: 30px;
+        width: 500px;
+        height: 306px;
+      }
+      .detail {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .blog-infos {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 22px;
+          color: #362a43;
+          .sepration {
+            width: 2px;
+            height: 14px;
+            background: rgba(54, 42, 67, 0.2);
+          }
+        }
+        .title {
+          font-family: "Frank Ruhl Libre";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 31px;
+          display: flex;
+          align-items: center;
+          color: #362a43;
+        }
+        .description {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          color: rgba(54, 42, 67, 0.8);
+        }
+        .read-more-button {
+          display: flex;
+          gap: 11px;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+// .clients-container {
+//   width: 100%;
+//   background-color: green;
+//   max-width: $container-width;
+//   margin: 230px auto 80px;
+//   .title-and-description-container {
+//     //   background-color: red;
+//     text-align: center;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     .title {
+//       font-family: "Rubik";
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: 48px;
+//       line-height: 57px;
+//       color: #362a43;
+//     }
+//     .description {
+//       width: 423px;
+//       margin-top: 11px;
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 16px;
+//       line-height: 26px;
+//       text-align: center;
+//       color: #464646;
+//     }
+//   }
+// }
 
 // .title {
 //   background-color: var(--color-primary);

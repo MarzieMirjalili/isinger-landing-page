@@ -11,6 +11,7 @@ body {
 a {
   text-decoration: none;
   margin-bottom: 0;
+  color: inherit;
 }
 
 p {
@@ -729,7 +730,7 @@ p {
 .team-members-container {
   width: 100%;
   max-width: 1179px;
-  margin: 230px auto 0;
+  margin: 230px auto 80px;
 }
 .team-members-container .title-and-description-container {
   text-align: center;
@@ -813,4 +814,118 @@ p {
 .team-members-container .team-members-list .member-item .member-info .social-medias a {
   display: inherit;
   cursor: pointer;
+}
+
+.latest-blog-block-container {
+  width: 100%;
+  position: relative;
+}
+.latest-blog-block-container .latest-blog-block {
+  width: 100%;
+  max-width: 1179px;
+  margin: 0 auto;
+}
+.latest-blog-block-container .latest-blog-block .arrows-and-title-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.latest-blog-block-container .latest-blog-block .arrows-and-title-container .title-and-description-container {
+  padding-top: 110px;
+}
+.latest-blog-block-container .latest-blog-block .arrows-and-title-container .title-and-description-container .title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  color: #362a43;
+}
+.latest-blog-block-container .latest-blog-block .arrows-and-title-container .title-and-description-container .description {
+  width: 423px;
+  margin-top: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #464646;
+}
+.latest-blog-block-container .latest-blog-block .arrows-and-title-container .slider-arrows {
+  display: flex;
+  padding: 189px 80px 0 0;
+  gap: 46px;
+}
+.latest-blog-block-container .latest-blog-block .background-shadow {
+  position: absolute;
+  background-color: #f8fdfd;
+  width: 55%;
+  height: 1000px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.latest-blog-block-container .latest-blog-slider {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  overflow-x: scroll;
+  width: 100%;
+  padding: 43px 0 43px calc((100% - 1179px) / 2);
+}
+.latest-blog-block-container .latest-blog-slider .blog-item {
+  background: #ffffff;
+  box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+  border-radius: 30px;
+  width: 540px;
+  height: 100%;
+  padding: 20px;
+  flex-shrink: 0;
+}
+.latest-blog-block-container .latest-blog-slider .blog-item .cover {
+  border-radius: 30px;
+  width: 500px;
+  height: 306px;
+}
+.latest-blog-block-container .latest-blog-slider .blog-item .detail {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.latest-blog-block-container .latest-blog-slider .blog-item .detail .blog-infos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #362a43;
+}
+.latest-blog-block-container .latest-blog-slider .blog-item .detail .blog-infos .sepration {
+  width: 2px;
+  height: 14px;
+  background: rgba(54, 42, 67, 0.2);
+}
+.latest-blog-block-container .latest-blog-slider .blog-item .detail .title {
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  display: flex;
+  align-items: center;
+  color: #362a43;
+}
+.latest-blog-block-container .latest-blog-slider .blog-item .detail .description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(54, 42, 67, 0.8);
+}
+.latest-blog-block-container .latest-blog-slider .blog-item .detail .read-more-button {
+  display: flex;
+  gap: 11px;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */
