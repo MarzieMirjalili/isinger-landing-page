@@ -824,6 +824,7 @@ p {
   width: 100%;
   max-width: 1179px;
   margin: 0 auto;
+  background-color: red;
 }
 .latest-blog-block-container .latest-blog-block .arrows-and-title-container {
   display: flex;
@@ -928,4 +929,97 @@ p {
   display: flex;
   gap: 11px;
   align-items: center;
+}
+
+.clients-container {
+  width: 100%;
+}
+.clients-container .title-and-description-container {
+  max-width: 1179px;
+  margin: 230px auto 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clients-container .title-and-description-container .title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  color: #362a43;
+}
+.clients-container .title-and-description-container .description {
+  width: 423px;
+  margin-top: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #464646;
+}
+.clients-container .clients-slider {
+  width: 100%;
+  max-width: 1500px;
+  margin: 83px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.clients-container .clients-slider .arrow-container {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 179, 201, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-container .clients-slider .card {
+  display: flex;
+  gap: 71px;
+}
+.clients-container .clients-slider .card .client-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.clients-container .clients-slider .card .client-infos .client-pic {
+  width: 245px;
+  height: 245px;
+  border-radius: 112px;
+}
+.clients-container .clients-slider .card .client-infos .name {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #362a43;
+  margin-top: 20px;
+}
+.clients-container .clients-slider .card .client-infos .role {
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #464646;
+}
+.clients-container .clients-slider .card .text {
+  padding: 25px 0;
+  width: 730px;
+  height: 250px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 50px;
+  color: #362a43;
+  text-overflow: ellipsis;
 }/*# sourceMappingURL=styles.css.map */

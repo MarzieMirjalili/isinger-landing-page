@@ -838,6 +838,7 @@ p {
     width: 100%;
     max-width: $container-width;
     margin: 0 auto;
+    background-color: red;
 
     .arrows-and-title-container {
       display: flex;
@@ -947,37 +948,104 @@ p {
     }
   }
 }
-// .clients-container {
-//   width: 100%;
-//   background-color: green;
-//   max-width: $container-width;
-//   margin: 230px auto 80px;
-//   .title-and-description-container {
-//     //   background-color: red;
-//     text-align: center;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     .title {
-//       font-family: "Rubik";
-//       font-style: normal;
-//       font-weight: 700;
-//       font-size: 48px;
-//       line-height: 57px;
-//       color: #362a43;
-//     }
-//     .description {
-//       width: 423px;
-//       margin-top: 11px;
-//       font-style: normal;
-//       font-weight: 400;
-//       font-size: 16px;
-//       line-height: 26px;
-//       text-align: center;
-//       color: #464646;
-//     }
-//   }
-// }
+.clients-container {
+  width: 100%;
+  .title-and-description-container {
+    // background-color: green;
+    max-width: $container-width;
+    margin: 230px auto 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 57px;
+      color: #362a43;
+    }
+    .description {
+      width: 423px;
+      margin-top: 11px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #464646;
+    }
+  }
+  .clients-slider {
+    width: 100%;
+    // background-color: red;
+    max-width: 1500px;
+    margin: 83px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .arrow-container {
+      width: 60px;
+      height: 60px;
+      background: rgba(255, 179, 201, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      //   background-color: #b48fdb;
+      display: flex;
+      //   align-items: center;
+      gap: 71px;
+      .client-infos {
+        // background-color: greenyellow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .client-pic {
+          width: 245px;
+          height: 245px;
+          border-radius: 112px;
+        }
+        .name {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 36px;
+          text-align: center;
+          color: #362a43;
+          margin-top: 20px;
+        }
+        .role {
+          margin-top: 5px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 22px;
+          text-align: center;
+          color: #464646;
+        }
+      }
+      .text {
+        // background-color: goldenrod;
+        padding: 25px 0;
+        width: 730px;
+        height: 250px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 50px;
+        color: #362a43;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
 
 // .title {
 //   background-color: var(--color-primary);
